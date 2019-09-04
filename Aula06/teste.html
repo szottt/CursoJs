@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando Valores</title>
+
+    <style>
+    
+            body{
+
+                /*background:darkgrey;*/
+                /*
+                height:auto;
+                padding: 40px 0;
+                color:#fff;
+                font-size:20px;
+                text-align:center;
+                border-radius:4px;
+                border:1px solid #980021;
+                box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+                background-image: linear-gradient(to bottom, #cf2b4f, #980021 130%);
+                */
+
+                background-image: linear-gradient(to right, white, rgb(17, 120, 204));
+                
+                
+                }
+
+            h1{
+
+                color: black;
+
+            }
+
+
+            #titulo{
+
+                text-align: center;
+            }
+
+            .espa{
+                
+                text-align: center;
+                line-height: 3;   
+                
+            }
+            .txt{
+                text-align: center;
+                font-weight: bold;
+
+            }
+
+            .table{
+
+                text-align: center;
+                border: 0.5x solid black
+
+            }
+
+    </style>
+
+
+</head>
+
+<body>
+        <div id="titulo" class="table">
+        <h1>Somando Valores</h1>
+        </div>
+        
+        <div class="table" class="titulo">
+
+                <input type="number" name="txtn1" id="txtn1"> +
+                <input type="number" name="txtn2" id="txtn2">
+        </div>
+
+        <div class="espa" id="titulo">
+
+                <input type="button" value="Somar" onclick="somar()">
+                <input type="button" value="Subitrair" onclick="subt()">         
+                <input type="button" value="Multiplicar" onclick="Multiplicar()">     
+                <input type="button" value="Dividir" onclick="Dividir()"> 
+
+        </dib>
+
+        <div class="espa" class="txt" id="res">
+
+                Resultado
+        
+        </div>
+        
+        <img src="/home/vkn/Imagens/pp.jpg" alt="Smiley face" height="42" width="42">
+
+    <script>
+        
+        function somar(){
+
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var ResSoma = window.document.getElementById('res')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 + n2
+                res .innerHTML = `<h1>A Soma entre ${n1} e ${n2} é igual a ${s}</h1><br>`
+               
+        }
+        function subt(){
+
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 - n2
+                res .innerHTML = `<h1>A Subtração entre ${n1} e ${n2} é igual a ${s}</h1><br>`
+                
+        }
+        function Multiplicar(){
+
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var ResMult = n1 * n2
+                res .innerHTML = `<h1>A Multiplicação entre ${n1} e ${n2} é igual a ${ResMult}</h1><br>`
+               
+        }
+        
+        function Dividir(){
+
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var ResDiv = n1 / n2
+                res .innerHTML = `<h1>A Divisão entre ${n1} e ${n2} é igual a ${ResDiv}</h1><br>`
+
+        }
+    
+    
+    
+    </script>
+    
+</body>
+</html>
