@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Nascionalidades</title>
+
+    <style>
+
+
+
+        .maiu {
+          text-transform: uppercase;
+        }
+
+        #titulo{
+            text-align: center
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>
+        Qual a sua Nascionalidade?
+    </h1>
+    Digite aqui a Sigla do seu Pais <input type="text" name="nasci" id="nasci" class="maiu" >
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        function verificar(){
+
+            var verif = window.document.querySelector("input#nasci")
+            var res = window.document.querySelector("div#res")
+            var resf = String(verif.value)
+
+
+            res.innerHTML = `<p>Vamos descobrir se voce é Brasileiro ou nao!</p>`
+
+            if (resf != 'BR' || resf !='Br' ||resf !='br' ||resf !='bR'){
+                res.innerHTML += `Voce é estrangeiro pois Nasceu nos ${resf}!`                 
+            }else{
+                
+                res.innerHTML += `Voce nasceu aqui no <strong>${resf}</strong> <br> Desta forma voce é Brasileiro!!` 
+            
+            }
+
+
+
+
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
