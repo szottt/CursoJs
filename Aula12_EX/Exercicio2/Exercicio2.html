@@ -9,16 +9,33 @@
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de Idade</h1>
 
     </header>
     <section>
-        <div id="msg">
-                Aqui vai aparecer a msg
-        </div>
+        <div>
 
-        <div id="foto">
-            <img id="imagem" src="manha.png" alt="foto do dia">
+        </div>
+        <p>Ano de Nascimento
+
+            <input type="number" name="txtano" id="txtano" min="0"></p> 
+
+             <p> Sexo:
+                 <input type="radio" name="radsext" id="mas" checked>
+                 <label for="mas">Masculino</label>
+                 <input type="radio" name="radsext" id="fem">
+                 <label for="fem">Feminino</label>                 
+             </p>
+             <p>
+                 <input type="button" value="Verificar" onclick="Verificar()">
+             </p>
+
+
+
+        <div id="res">
+
+            Preencha os dados acima para ver o resultado!
+
 
         </div>
 
@@ -30,4 +47,4 @@
     <script src="script.js"></script>
     
 </body>
-</html>
+</html> 
