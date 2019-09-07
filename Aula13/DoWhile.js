@@ -1,5 +1,6 @@
 var x = 0
-while( x <= 10){
+do{
     console.log(`passo ${x}`)
     x+=1
-}
+} while( x <= 10)
+console.log('FInalizado')
