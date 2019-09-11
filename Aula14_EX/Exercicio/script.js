@@ -1,7 +1,16 @@
-function carregar(){
+function Contador(){
 
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
+    var tn1 = window.document.querySelector('input#num1')
+    var tn2 = window.document.querySelector('input#num2')
+    var ResSoma = window.document.querySelector('div#res')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+
+    var s = n1 + n2 
+
+    ResSoma .innerHTML = `O RESULTADO DA SOMA DE ${n1} + ${n2} É ${s}`
+
+/*
     var data = new Date()
     var hora = data.getHours()
 
@@ -21,5 +30,5 @@ function carregar(){
         img.src = "noite.png"
         document.body.style.background = '#131f2b'
     }
-
+*/
 }
