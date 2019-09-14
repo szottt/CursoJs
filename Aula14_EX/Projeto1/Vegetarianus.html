@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegetarianus</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Seja bem vindo ao Vegetarianus</h1>
+        <h5>O Site para voce que vive ou quer viver em um Mundo sem Sofrimento</h5>
+
+
+    </header>
+    <section>
+        <div>
+                <p>Primeiro vamos descobrir quem é voce!</p>
+
+                <p>Qual é seu nome: <input type="text" name="nome" id="txt1"></p>
+                <p>Qual seu mundo nos conte abaixo:</p>
+
+                <p><input type="radio" name="radtipo" id="vege">
+                 <label for="vege"> Vegetariano </label></p>
+
+                <p><input type="radio" name="radtipo" id="vega">
+                <label for ="vega"> Vegano </label></p>
+
+                <p><input type="radio" name="radtipo" id="car">
+                <label for = "car"> Adepto a Carnes</label></p>
+
+
+                   <p> Orientação Sexual:</p>
+                        <input type="radio" name="radsext" id="mas" checked>
+                        <label for="mas">Masculino</label>
+                        <input type="radio" name="radsext" id="fem">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="radsext" id="out">
+                        <label for = "out">Rogerio</label>
+                    </p>
+
+                
+
+                <p>Caso seja Vegetariano ou vegano nos informe abaixo desde que ano:
+                        <input type="number" name="datacad" id="datacad"></p>
+                
+                <input type="button" value="Cadastrar" onclick="Cadastro()">
+
+        </div>
+
+        <div id="res">
+            Aqui ira aparecer seu Cadastro
+
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy;Igor Szot</p>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

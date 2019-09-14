@@ -5,7 +5,7 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
 
-    var hora = 22
+    var hora = 09
 
     msg.innerHTML = `Agora sao ${hora} horas.`
 
