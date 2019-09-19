@@ -15,5 +15,9 @@ for(let pos=0;pos<num.length;pos++){
 
 // in = dentro ou em     
 for(let pos in num ){
-    console.log(`Nosso ${pos+1}º vetor é ${num[pos]} na posicao ${pos}`)
+    
+    console.log(`Nosso ${pos}º vetor é ${num[pos]} na posicao ${pos}`)
 }
+
+//indexOf (Sempre Maiusculo o Of)
+console.log(`TESTE ${num.indexOf(4)}`)
