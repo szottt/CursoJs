@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Receitas</title>
+    <style type="text/css">
+    *{
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    
+    section{
+    margin: 50px auto;
+    width: 1050;
+    height: 150px; 
+}
+
+.rede{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+}
+
+.rede:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 4px 30px 16px 0px rgba(50,50,50,0.45)
+}
+
+.rede#facebook{
+    background-color: #2372a3;
+}
+.rede#instagram{
+    background-color: #3f729b;
+}
+
+.icone{
+    margin: 0px auto;
+    padding: 10px;
+    width: 20px;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+        <section>
+                <div class="rede" id="facebook"> 
+                    <img class="icone" src="../_Imagens/facebook.png"/>
+                </div>
+                <div class="rede" id="instagram">
+                        <img class="icone" src="../_Imagens/instagram.png"/>
+                </div>
+        </section>
+</body>
+</html>
